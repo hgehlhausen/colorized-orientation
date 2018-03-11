@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Colorized Orientation
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div indicator [ngStyle]="{ 'background-color': gyrocolor }"></div>
+  <div>
+    Alpha: <span>{{alpha.getProcessedValue().toFixed(8)}}</span><br>
+    Beta: <span>{{beta.getProcessedValue().toFixed(8)}}</span><br>
+    Gamma: <span>{{gamma.getProcessedValue().toFixed(8)}}</span><br>
+    Color: <span>{{gyrocolor}}</span>
+  </div>
+</ion-content>
